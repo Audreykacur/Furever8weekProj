@@ -15,17 +15,69 @@
             <img src="./Assets/logoMain.png" class="logo" alt="logo">
         </div>
         <div class="nav_links">
-            <button><a href="./home.html">About</a></button>
-            <button><a href="./about.html">Contact</a></button>
-            <button><a href="./login.html">Welcome Back</a></button>
+            <button class="nav_button"><a href="./home.html">About</a></button>
+            <button class="nav_button"><a href="./about.html">Contact</a></button>
+            <button class="nav_button" onclick="document.getElementById('logMeIn').style.display='block'" style="width:auto;"><a>Login</a></button>
         </div>
     </nav>
     <div class="home_content">
         <div class="home_text">
             <h1>We help you find furever homes.</h1>
-            <button><a href="./signup.html">Join Furever</a></button>
+            <button class="nav_button" onclick="document.getElementById('SignMeUP').style.display='block'" style="width:auto;"><a>Join Furever</a></button>
         </div>
 </section>
+</div>
+<div id="logMeIn" class="login_modal">
+
+    <form class="loginModal animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('logMeIn').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+        </div>
+
+        <div class="login_container">
+            <h3>Welcome To Furever</h3>
+
+            <label for="username"><b>username</b></label>
+            <input type="text" placeholder="enter username" name="uname" required>
+
+            <label for="psw"><b>password</b></label>
+            <input type="password" placeholder="enter password" name="password" required>
+
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+<div id="SignMeUP" class="login_modal">
+
+    <form class="popUpBox animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('SignMeUP').style.display='none'" class="close2"
+                title="Close Modal">&times;</span>
+        </div>
+
+        <div class="login_container">
+            <h3>Sign up</h3>
+
+            <label for="fname"><b>first name</b></label>
+            <input type="text" placeholder="enter first name" name="fname" required>
+
+            <label for="fname"><b>last name</b></label>
+            <input type="text" placeholder="enter last name" name="lname" required>
+
+
+            <label for="username"><b>username</b></label>
+            <input type="text" placeholder="enter username" name="uname" required>
+
+            <label for="password"><b>password</b></label>
+            <input type="password" placeholder="enter password" name="psw" required>
+
+            <label for="psw2"><b>confirm password</b></label>
+            <input type="password" placeholder="enter password" name="psw2" required>
+
+            <button type="submit">Login</button>
+        </div>
+    </form>
 </div>
 </body>
 </html>

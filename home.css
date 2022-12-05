@@ -75,13 +75,19 @@
     justify-content: space-between;
     align-items: center;
 }
+.nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 .nav_links a{
     list-style: none;
     text-decoration: none;
     padding: 0 20px;
     color: #fff;
 }
-.nav_links button{
+.nav_links .nav_button{
     background: var(--ColorVarientSecondary);
     color: #fff;
     border: none;
@@ -90,10 +96,140 @@
     cursor: pointer;
     margin: 0 8px;
 }
-.nav_links button:hover{
+.nav_links .nav_button:hover{
     background: var(--ColorVarient);
 }
 .logo{
     width: 100px;
     height: 100px;   
 }
+/* ----- */
+/* Login */
+input[type=text],
+  input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+  }
+
+  /* Set a style for all buttons */
+  button {
+    background: var(--ColorVarientSecondary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    background: var(--ColorVarient);
+  }
+
+  /* Center the image and position the close button */
+  .login_container {
+      padding: 16px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      background-color: #fff;
+      width: 60%;
+      margin: 0 auto;
+  }
+  .login_container h3{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  span.password {
+      float: right;
+      padding-top: 16px;
+  }
+
+  /* The Modal (background) */
+  .login_modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+  }
+
+  /* Modal Content/Box */
+  .loginModal {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto;
+      /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 60%;
+      /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button (x) */
+  .close {
+      position: absolute;
+      right: 300px;
+      top: 130px;
+      color: var(--ColorVarientSecondary);
+      font-size: 35px;
+      font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: red;
+      cursor: default;
+  }
+  .close2{
+    position: absolute;
+    right: 300px;
+    top: 60px;
+    color: var(--ColorVarientSecondary);
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Add Zoom Animation when click login button*/
+  .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+      from {
+          -webkit-transform: scale(0)
+      }
+
+      to {
+          -webkit-transform: scale(1)
+      }
+  }
+
+  @keyframes animatezoom {
+      from {
+          transform: scale(0)
+      }
+
+      to {
+          transform: scale(1)
+      }
+  }
