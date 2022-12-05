@@ -1,3 +1,4 @@
+/* ------------------------- */
 /* Variables for Color Codes */
 *{
     box-sizing: border-box;
@@ -11,7 +12,7 @@
     --ColorVarientSecondary: #382d72;
     --ColorVarientTertiary: #e4cbf3;
 }
-
+/* ------------------------ */
 /* Styling for the homepage */
 .home_container{
     width: 100%;
@@ -27,6 +28,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.home_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .home_text h1{
     font-size: 3rem;
@@ -56,6 +63,7 @@
     background: var(--ColorVarient);
     transition: 0.3s;
 }
+/* -------------------------- */
 /* Styling for the navigation */
 .nav_container{
     background: #000;
