@@ -14,7 +14,7 @@ body{
     background: linear-gradient(var(--PrimaryColor), var(--ColorVarientSecondary));
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 :root{
     --PrimaryColor: #b7c1c3;
