@@ -4,14 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../home.css">
     <title>Furever</title>
 </head>
 <body>
+  <nav class="nav_container">
+    <div class="nav_logo">
+        <a href="../home.html"><img src="../Assets/logoMain.png" class="logo" alt="logo"></a>
+    </div>
+    <div class="nav_links">
+        <button class="nav_button"><a href="./home.html">About</a></button>
+        <button class="nav_button"><a href="./about.html">Contact</a></button>
+        <button class="nav_button" onclick="document.getElementById('logMeIn').style.display='block'" style="width:auto;"><a>Login</a></button>
+    </div>
+</nav>
     <div class="adoption_container">
-        <div class="adoption_card">
-            <img src="../Assets/Audrey.png" alt="Audrey">
-            <img src="../Assets/Seth.png" alt="Seth">
-            <img src="../Assets/Renato.png" alt="Renato">
+        <div class="adoption">
+        <div class="item main">
+            <img id="images" src="../Assets/Audrey.png"/>
+            <div class="caption">Audrey</div>
+          </div>
+          <div class="item">
+            <img id="images" src="../Assets/Renato.png" />
+            <div class="caption">Renato</div>
+          </div> 
+          <div class="item">
+            <img id="images" src="../Assets/Seth.png"/>
+            <div class="caption">Seth</div>
+          </div>
+          <div class="item">
+            <img src="../Assets/Seth.png"/>
+            <div class="caption">Seth</div>
+          </div>
+          <div class="item">
+            <img src="../Assets/Renato.png" />
+            <div class="caption">Renato</div>
+          </div> 
+          <div class="item">
+            <img src="../Assets/Renato.png" />
+            <div class="caption">Renato</div>
+          </div> 
         </div>
+       </div>
+       <div class="buttons">
+        <button id="left" class="left">Left</button>
+        <button id="right" class="right">Right</button>
+  </div>
 </body>
+<script src="./Adoption.js"></script>
 </html>

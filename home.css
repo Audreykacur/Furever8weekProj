@@ -5,6 +5,16 @@
     margin: 0;
     padding: 0;
 }
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(var(--PrimaryColor), var(--ColorVarientSecondary));
+    height: 100vh;
+    width: 100vw;
+}
 :root{
     --PrimaryColor: #b7c1c3;
     --SecondaryColor: #a083e0;
@@ -68,7 +78,6 @@
 .nav_container{
     background: #000;
     opacity: 0.7;
-    position: fixed;
     width: 100%;
     height: 120px;
     display: flex;
@@ -233,3 +242,78 @@ input[type=text],
           transform: scale(1)
       }
   }
+
+
+  /* Adoption Page */
+  /* ------------- */
+.adoption{
+  transition: all 0.3s ease;
+}
+.adoption img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 103%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    color: #fff;
+  }
+.item{
+    position: absolute;
+    display: none;
+}
+.main{
+    display: block;
+}
+  .adoption_container{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #000;
+    margin-top: 150px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+
+}
+.buttons .left{
+    background: var(--ColorVarientSecondary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+    opacity: 0.8;
+}
+
+.buttons .right{
+    background: var(--ColorVarientSecondary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+    opacity: 0.8;
+}
+.buttons .left:hover{
+    background: var(--ColorVarient);
+    transition: 0.3s;
+}
+.buttons .right:hover{
+    background: var(--ColorVarient);
+    transition: 0.3s;
+}

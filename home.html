@@ -12,7 +12,7 @@
     <div class="home_container">
     <nav class="nav_container">
         <div class="nav_logo">
-            <img src="./Assets/logoMain.png" class="logo" alt="logo">
+            <a href="/home.html"><img src="./Assets/logoMain.png" class="logo" alt="logo"></a>
         </div>
         <div class="nav_links">
             <button class="nav_button"><a href="./home.html">About</a></button>
@@ -29,7 +29,7 @@
 </div>
 <div id="logMeIn" class="login_modal">
 
-    <form class="loginModal animate" action="/action_page.php" method="post">
+    <form class="loginModal animate" action="/welcome.php" method="post">
         <div class="imgcontainer">
             <span onclick="document.getElementById('logMeIn').style.display='none'" class="close"
                 title="Close Modal">&times;</span>
@@ -50,7 +50,7 @@
 </div>
 <div id="SignMeUP" class="login_modal">
 
-    <form class="popUpBox animate" action="/action_page.php" method="post">
+    <form class="popUpBox animate" action="/welcome.php" method="post">
         <div class="imgcontainer">
             <span onclick="document.getElementById('SignMeUP').style.display='none'" class="close2"
                 title="Close Modal">&times;</span>
@@ -60,24 +60,25 @@
             <h3>Sign up</h3>
 
             <label for="fname"><b>first name</b></label>
-            <input type="text" placeholder="enter first name" name="fname" required>
+            <input type="text" id="f_name" placeholder="enter first name" name="fname" required>
 
             <label for="fname"><b>last name</b></label>
-            <input type="text" placeholder="enter last name" name="lname" required>
+            <input type="text" id="l_name" placeholder="enter last name" name="lname" required>
 
 
             <label for="username"><b>username</b></label>
-            <input type="text" placeholder="enter username" name="uname" required>
+            <input type="text" id="u_name" placeholder="enter username" name="uname" required>
 
             <label for="password"><b>password</b></label>
-            <input type="password" placeholder="enter password" name="psw" required>
+            <input type="password" id="pwd" placeholder="enter password" name="psw" required>
 
             <label for="psw2"><b>confirm password</b></label>
-            <input type="password" placeholder="enter password" name="psw2" required>
+            <input type="password" id="cpwd" placeholder="enter password" name="cpwd" required>
 
-            <button type="submit">Login</button>
+            <button id="confirmButton" type="submit" name="submit" onclick="validatePassword()">Login</button>
         </div>
     </form>
 </div>
+<script src="./home.js"></script>
 </body>
 </html>
