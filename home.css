@@ -12,9 +12,6 @@ html{
 }
 body{
     background: linear-gradient(var(--PrimaryColor), var(--ColorVarientSecondary));
-    height: 100vh;
-    width: 100vw;
-    /* overflow: hidden; */
 }
 :root{
     --PrimaryColor: #b7c1c3;
@@ -52,6 +49,7 @@ label{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
 }
 .home_text h1{
     font-size: 3rem;

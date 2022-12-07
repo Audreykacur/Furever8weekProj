@@ -29,7 +29,7 @@
 </div>
 <div id="logMeIn" class="login_modal">
 
-    <form class="loginModal animate" action="/welcome.php" method="post">
+    <form class="loginModal animate" action="/furever/welcome.php" method="post">
         <div class="imgcontainer">
             <span onclick="document.getElementById('logMeIn').style.display='none'" class="close"
                 title="Close Modal">&times;</span>
@@ -50,7 +50,7 @@
 </div>
 <div id="SignMeUP" class="login_modal">
 
-    <form class="popUpBox animate" action="/welcome.php" method="post">
+    <form class="popUpBox animate" action="/furever/welcome.php" method="post">
         <div class="imgcontainer">
             <span onclick="document.getElementById('SignMeUP').style.display='none'" class="close2"
                 title="Close Modal">&times;</span>
@@ -75,23 +75,12 @@
             <label for="psw2"><b>confirm password</b></label>
             <input type="password" id="cpwd" placeholder="enter password" name="cpsw" required>
 
+            <label for="profile"><b>Profile Pcture</b></label>
+            <input type="url" id="photoUrl" placeholder="enter profile picture" name="photoUrl" required>
+
             <button id="confirmButton" type="submit" name="submit" onclick="validatePassword()">Login</button>
         </div>
     </form>
-    <footer>
-        <h5>Contact Hours
-            <small> Monday - Friday 10 - 5 </small>
-            <br>
-            Phone number: 240-818-9762
-            <br>
-            Email: <a href="mailto:FureverSupport@gmail.com">FureverSupport@gmail.com</a>
-            <br>
-            <script>
-                document.write(document.lastModified);
-            </script>
-            <small><i>Copyright &copy; 2022 Kacur Stephens Rios</i></small>
-        </h5>
-    </footer>
 </div>
 <script src="./home.js"></script>
 </body>
