@@ -1,3 +1,5 @@
+/* ------------------------- */
+/* Variables for Color Codes */
 :root {
     --PrimaryColor: #b7c1c3;
     --SecondaryColor: #a083e0;
@@ -6,8 +8,7 @@
     --ColorVarientTertiary: #e4cbf3;
 }
 
-/* ------------------------- */
-/* Variables for Color Codes */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -22,6 +23,7 @@ html {
     box-sizing: border-box;
     background: linear-gradient(180deg, var(--SecondaryColor), var(--ColorVarientSecondary));
 }
+
 
 /* -------------------------- */
 /* Styling for the navigation */

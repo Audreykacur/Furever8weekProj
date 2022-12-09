@@ -1,20 +1,5 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat';
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: linear-gradient(var(--PrimaryColor), var(--ColorVarientSecondary));
-}
-
+/* ------------------------- */
+/* Variables for Color Codes */
 :root {
     --PrimaryColor: #b7c1c3;
     --SecondaryColor: #a083e0;
@@ -23,12 +8,27 @@ body {
     --ColorVarientTertiary: #e4cbf3;
 }
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, var(--SecondaryColor), var(--ColorVarientSecondary));
+}
+
 .form_container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 form {
@@ -56,48 +56,8 @@ form input {
     height: 40px;
     border: 1px solid var(--ColorVarient);
     border-radius: 5px;
-    text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
-}
-
-
-/* ------------------------- */
-/* Variables for Color Codes */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat';
-    overflow: hidden;
-
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: linear-gradient(var(--PrimaryColor), var(--ColorVarientSecondary));
-}
-
-:root {
-    --PrimaryColor: #b7c1c3;
-    --SecondaryColor: #a083e0;
-    --ColorVarient: #5c509c;
-    --ColorVarientSecondary: #382d72;
-    --ColorVarientTertiary: #e4cbf3;
-}
-
-input {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-label {
-    color: var(--ColorVarientSecondary);
 }
 
 /* -------------------------- */
@@ -195,11 +155,20 @@ button:hover {
 }
 
 .login_container h3 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
 span.password {
     float: right;
     padding-top: 16px;
+}
+
+h2 {
+    font-size: 3rem;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px var(--PrimaryColor);
+    margin-top: 1rem;
 }
