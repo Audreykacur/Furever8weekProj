@@ -5,48 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Furever</title>
 </head>
 <body>
     <section>
     <div class="home_container">
-    <nav class="nav_container">
-        <div class="nav_logo">
-            <a href="/home.html"><img src="./Assets/logoMain.png" class="logo" alt="logo"></a>
-        </div>
-        <div class="nav_links">
-            <button class="nav_button"><a href="./home.html">About</a></button>
-            <button class="nav_button"><a href="./faq.html">FAQ</a></button>
-            <button class="nav_button" onclick="document.getElementById('logMeIn').style.display='block'" style="width:auto;"><a>Login</a></button>
-        </div>
-    </nav>
+        <nav class="nav_container">
+            <div class="nav_logo">
+                <a href="/home.html"><img src="./Assets/logoMain.png" class="logo" alt="logo"></a>
+            </div>
+            <div class="nav_links">
+                <button class="nav_button"><a href="./about.html">About</a></button>
+                <button class="nav_button"><a href="./faq.html">FAQ</a></button>
+                <button class="nav_button"><a href="./login.html">Login</a></button>
+            </div>
+        </nav>
     <div class="home_content">
         <div class="home_text">
-            <h1>We help you find furever homes.</h1>
+            <h1>We help you find Furever homes.</h1>
             <button class="nav_button" onclick="document.getElementById('SignMeUP').style.display='block'" style="width:auto;"><a>Join Furever</a></button>
         </div>
 </section>
-</div>
-<div id="logMeIn" class="login_modal">
-
-    <form class="loginModal animate" action="/furever/welcome.php" method="post">
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('logMeIn').style.display='none'" class="close"
-                title="Close Modal">&times;</span>
-        </div>
-
-        <div class="login_container2">
-            <h3>Welcome To Furever</h3>
-
-            <label for="username"><b>username</b></label>
-            <input type="text" placeholder="enter username" name="uname" required>
-
-            <label for="psw"><b>password</b></label>
-            <input type="password" placeholder="enter password" name="password" required>
-
-            <button type="submit">Login</button>
-        </div>
-    </form>
 </div>
 <div id="SignMeUP" class="login_modal">
 

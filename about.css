@@ -1,20 +1,4 @@
-/* ------------------------- */
-/* Variables for Color Codes */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: linear-gradient(180deg, var(--SecondaryColor), var(--ColorVarientSecondary));
-    /* overflow: hidden; */
-}
-:root{
+:root {
     --PrimaryColor: #b7c1c3;
     --SecondaryColor: #a083e0;
     --ColorVarient: #5c509c;
@@ -22,10 +6,26 @@ body{
     --ColorVarientTertiary: #e4cbf3;
 }
 
+/* ------------------------- */
+/* Variables for Color Codes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, var(--SecondaryColor), var(--ColorVarientSecondary));
+}
 
 /* -------------------------- */
 /* Styling for the navigation */
-.nav_container{
+.nav_container {
     background: #000;
     opacity: 0.7;
     width: 100%;
@@ -34,19 +34,22 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.nav_links{
+
+.nav_links {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.nav_links a{
+
+.nav_links a {
     list-style: none;
     text-decoration: none;
     padding: 0 20px;
     color: #fff;
 }
-.nav_links .nav_button{
+
+.nav_links .nav_button {
     background: var(--ColorVarientSecondary);
     color: #fff;
     border: none;
@@ -55,28 +58,31 @@ body{
     cursor: pointer;
     margin: 0 8px;
 }
-.nav_links .nav_button:hover{
+
+.nav_links .nav_button:hover {
     background: var(--ColorVarient);
 }
-.logo{
+
+.logo {
     width: 100px;
-    height: 100px;   
+    height: 100px;
 }
 
 /* -------------------------- */
 /* Styling for the about section */
-h2,h4{
+h2,
+h4 {
     font-size: 3rem;
-    color: var(--PrimaryColor);
+    color: black;
+    text-shadow: 0 0 10px var(--PrimaryColor);
     font-weight: 700;
-    text-align: center;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px #000;
     margin-top: 1rem;
 }
-p{
-    color: var(--PrimaryColor);
-    font-weight: 500;
-    text-align: center;
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    font-style: bold;
     margin-bottom: 1rem;
 }

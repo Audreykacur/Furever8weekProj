@@ -1,35 +1,44 @@
 /* ------------------------- */
 /* Variables for Color Codes */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat';
+    overflow: hidden;
+
 }
-html{
+
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: linear-gradient(var(--PrimaryColor), var(--ColorVarientSecondary));
 }
-:root{
+
+:root {
     --PrimaryColor: #b7c1c3;
     --SecondaryColor: #a083e0;
     --ColorVarient: #5c509c;
     --ColorVarientSecondary: #382d72;
     --ColorVarientTertiary: #e4cbf3;
 }
-input{
+
+input {
     text-align: center;
     text-transform: uppercase;
 }
-label{
+
+label {
     color: var(--ColorVarientSecondary);
 }
+
 /* ------------------------ */
 /* Styling for the homepage */
-.home_container{
+.home_container {
     width: 100%;
     height: 100vh;
     background: url('./Assets/Background.png');
@@ -37,21 +46,24 @@ label{
     background-position: center;
     background-repeat: no-repeat;
 }
-.home_content{
+
+.home_content {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home_text{
+
+.home_text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
 }
-.home_text h1{
+
+.home_text h1 {
     font-size: 3rem;
     color: var(--PrimaryColor);
     font-weight: 700;
@@ -59,13 +71,15 @@ label{
     margin-bottom: 1rem;
     text-shadow: 0 0 10px var(--ColorVarient);
 }
-.home_text a{
+
+.home_text a {
     list-style: none;
     text-decoration: none;
     padding: 0 20px;
     color: #fff;
 }
-.home_content .home_text button{
+
+.home_content .home_text button {
     background: var(--ColorVarientSecondary);
     color: #fff;
     border: none;
@@ -75,13 +89,15 @@ label{
     margin: 0 8px;
     opacity: 0.8;
 }
-.home_content button:hover{
+
+.home_content button:hover {
     background: var(--ColorVarient);
     transition: 0.3s;
 }
+
 /* -------------------------- */
 /* Styling for the navigation */
-.nav_container{
+.nav_container {
     background: #000;
     opacity: 0.7;
     width: 100%;
@@ -90,19 +106,22 @@ label{
     justify-content: space-between;
     align-items: center;
 }
-.nav_links{
+
+.nav_links {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-.nav_links a{
+
+.nav_links a {
     list-style: none;
     text-decoration: none;
     padding: 0 20px;
     color: #fff;
 }
-.nav_links .nav_button{
+
+.nav_links .nav_button {
     background: var(--ColorVarientSecondary);
     color: #fff;
     border: none;
@@ -111,27 +130,30 @@ label{
     cursor: pointer;
     margin: 0 8px;
 }
-.nav_links .nav_button:hover{
+
+.nav_links .nav_button:hover {
     background: var(--ColorVarient);
 }
-.logo{
+
+.logo {
     width: 100px;
-    height: 100px;   
+    height: 100px;
 }
+
 /* ----- */
 /* Login */
 input[type=text],
-  input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-  }
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
-  /* Set a style for all buttons */
-  button {
+/* Set a style for all buttons */
+button {
     background: var(--ColorVarientSecondary);
     color: #fff;
     border: none;
@@ -139,86 +161,89 @@ input[type=text],
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-  }
+}
 
-  button:hover {
+button:hover {
     background: var(--ColorVarient);
-  }
+}
 
-  /* Center the image and position the close button */
-  .login_container {
-      padding: 16px;
-      text-transform: uppercase;
-      border-radius: 5px;
-      background-color: #fff;
-      width: 40%;
-      height: 50%;
-      margin: 0 auto;
-      border: 1px solid #000;
-  }
-  .login_container2{
-      text-transform: uppercase;
-      border-radius: 5px;
-      background-color: #fff;
-      width: 100%;
-      height: 50%;
-      margin: 0 auto;
-      border: 1px solid #000;
-  }
-  .login_container h3{
+/* Center the image and position the close button */
+.login_container {
+    padding: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 40%;
+    height: 50%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+.login_container2 {
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+.login_container h3 {
     text-align: center;
     margin-bottom: 20px;
-  }
+}
 
-  span.password {
-      float: right;
-      padding-top: 16px;
-  }
+span.password {
+    float: right;
+    padding-top: 16px;
+}
 
-  /* The Modal (background) */
-  .login_modal {
-      display: none;
-      /* Hidden by default */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%;
-      /* Full width */
-      height: 100%;
-      /* Full height */
-      overflow: auto;
-      /* Enable scroll if needed */
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.4);
-      /* Black w/ opacity */
-      padding-top: 30px;
-  }
+/* The Modal (background) */
+.login_modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 30px;
+}
 
-  /* Modal Content/Box */
-  .loginModal {
-      background-color: #fefefe;
-      margin: 5% auto 15% auto;
-      /* 5% from the top, 15% from the bottom and centered */
-      border: 1px solid #888;
-      width: 60%;
-      /* Could be more or less, depending on screen size */
-  }
+/* Modal Content/Box */
+.loginModal {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+}
 
-  /* The Close Button (x) */
-  .close {
-      position: absolute;
-      right: 300px;
-      top: 90px;
-      color: var(--ColorVarientSecondary);
-      font-size: 35px;
-      font-weight: bold;
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 300px;
+    top: 90px;
+    color: var(--ColorVarientSecondary);
+    font-size: 35px;
+    font-weight: bold;
     cursor: pointer;
-  }
-  span.close2{
+}
+
+span.close2 {
     position: absolute;
     right: 400px;
     top: 40px;
@@ -226,14 +251,15 @@ input[type=text],
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  .close:hover,
-  .close:focus {
-      color: red;
-      cursor: default;
-  }
-  .close2{
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: default;
+}
+
+.close2 {
     position: absolute;
     right: 300px;
     top: 60px;
@@ -241,55 +267,58 @@ input[type=text],
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  /* Add Zoom Animation when click login button*/
-  .animate {
-      -webkit-animation: animatezoom 0.6s;
-      animation: animatezoom 0.6s
-  }
+/* Add Zoom Animation when click login button*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
 
-  @-webkit-keyframes animatezoom {
-      from {
-          -webkit-transform: scale(0)
-      }
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
 
-      to {
-          -webkit-transform: scale(1)
-      }
-  }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
 
-  @keyframes animatezoom {
-      from {
-          transform: scale(0)
-      }
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
 
-      to {
-          transform: scale(1)
-      }
-  }
+    to {
+        transform: scale(1)
+    }
+}
 
 
-  /* Adoption Page */
-  /* ------------- */
-  .adoption_container{
+/* Adoption Page */
+/* ------------- */
+.adoption_container {
     width: 100%;
     height: 100%;
     margin: 0 auto;
     margin-top: 20px;
 }
-.adoption{
-  transition: all 0.3s ease;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
+
+.adoption {
+    transition: all 0.3s ease;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
 }
-.adoption img{
+
+.adoption img {
     width: 400px;
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
 }
+
 .caption {
     position: absolute;
     bottom: 0;
@@ -300,15 +329,18 @@ input[type=text],
     align-items: center;
     height: 35px;
     color: #fff;
-  }
-.item{
+}
+
+.item {
     position: absolute;
     display: none;
 }
-.main{
+
+.main {
     display: block;
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +349,8 @@ input[type=text],
     width: 100px;
 
 }
-.buttons .left{
+
+.buttons .left {
     background: var(--ColorVarientSecondary);
     color: #fff;
     border: none;
@@ -328,7 +361,7 @@ input[type=text],
     opacity: 0.8;
 }
 
-.buttons .right{
+.buttons .right {
     background: var(--ColorVarientSecondary);
     color: #fff;
     border: none;
@@ -338,11 +371,13 @@ input[type=text],
     margin: 0 8px;
     opacity: 0.8;
 }
-.buttons .left:hover{
+
+.buttons .left:hover {
     background: var(--ColorVarient);
     transition: 0.3s;
 }
-.buttons .right:hover{
+
+.buttons .right:hover {
     background: var(--ColorVarient);
     transition: 0.3s;
 }

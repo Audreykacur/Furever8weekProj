@@ -1,0 +1,171 @@
+:root {
+    --PrimaryColor: #b7c1c3;
+    --SecondaryColor: #a083e0;
+    --ColorVarient: #5c509c;
+    --ColorVarientSecondary: #382d72;
+    --ColorVarientTertiary: #e4cbf3;
+}
+
+/* ------------------------- */
+/* Variables for Color Codes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, var(--SecondaryColor), var(--ColorVarientSecondary));
+}
+
+label {
+    color: var(--ColorVarientSecondary);
+}
+
+
+/* -------------------------- */
+/* Styling for the navigation */
+.nav_container {
+    background: #000;
+    opacity: 0.7;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav_links a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.nav_links .nav_button {
+    background: var(--ColorVarientSecondary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.nav_links .nav_button:hover {
+    background: var(--ColorVarient);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+/* Set a style for all buttons */
+button {
+    background: var(--ColorVarientSecondary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background: var(--ColorVarient);
+}
+
+/* Adoption Page */
+/* ------------- */
+.adoption_container {
+    margin-top: 50px;
+}
+
+.adoption {
+    transition: all 0.3s ease;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.adoption img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 103%;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    color: #fff;
+}
+
+.item {
+    position: absolute;
+    display: none;
+}
+
+.main {
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100px;
+    width: 300px;
+
+}
+
+.buttons .left {
+    background: var(--ColorVarientSecondary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+    opacity: 0.8;
+}
+
+.buttons .right {
+    background: var(--ColorVarientSecondary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 8px;
+    opacity: 0.8;
+}
+
+.buttons .left:hover {
+    background: var(--ColorVarient);
+    transition: 0.3s;
+}
+
+.buttons .right:hover {
+    background: var(--ColorVarient);
+    transition: 0.3s;
+}
